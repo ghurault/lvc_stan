@@ -1,6 +1,6 @@
 # Notes -------------------------------------------------------------------
 
-# Thing remaining to do: rename models (multiplicative, additive)
+# 
 
 # Initialisation ----------------------------------------------------------
 
