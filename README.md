@@ -1,12 +1,14 @@
 # lvc_stan
-Fitting a Lotka-Volterra competition model using Stan
+Fitting a Lotka-Volterra competition model using Stan.
 
-The data is available in two csv files (one for each set of experiment) and is from:
-B. Y. G. F. Gause,
+The data is available in two csv files (one for each set of experiment) and was published in [Gause (1932)](http://jeb.biologists.org/content/jexbio/9/4/389.full.pdf) to study the competition of two species of yeast.
+[B. Y. G. F. Gause,
 “EXPERIMENTAL STUDIES ON THE STRUGGLE FOR EXISTENCE I . MIXED POPULATION OF TWO SPECIES OF YEAST”,
-J. Exp. Biol., vol. 9, no. 4, pp. 389–402, 1932.
+J. Exp. Biol., vol. 9, no. 4, pp. 389–402, 1932.](http://jeb.biologists.org/content/jexbio/9/4/389.full.pdf)
 
 Two models are proposed, one with multiplicative error, the other with additive error.
-The two models notably implement a Cauchy regularisation on the alpha matrix (matrix of competition rates). Possibility to change the distribution to a Gaussian (cf. ridge regularisation), Laplace (cf. lasso regularisation) or to the Horseshoe distribution.
+The two models notably implement a Cauchy regularisation on the alpha matrix (matrix of competition rates). The regularisation could be changed to a Gaussian distribution (cf. ridge regularisation), Laplace (cf. lasso regularisation) or to the Horseshoe distribution.
 
-Coefficients estimates for the different models (and those estimated in the paper) are avaible in results.jpg
+Coefficients estimates for the different models (and those estimated in the paper) are given below:
+
+![coefficient estimates](results.jpg)
