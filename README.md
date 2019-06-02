@@ -40,13 +40,13 @@ More generally, for N species (`*` is the element-wise multiplication):
 
 The solutions of the ODEs can expressed as function of the initial conditions f_0, the parameters alpha and r and time t:
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=p%28t%29%20%3D%20%20f%28p_0%2C%20r%2C%20%5Calpha%2C%20t%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="http://www.sciweavers.org/tex2img.php?eq=p%28t%29%20%3D%20f%28p_0%2C%20r%2C%20%5Calpha%2C%20t%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="p(t) = f(f_0, r, \alpha, t)" width="150" height="19" />
 
 The measurement processed is modelled with a normal distribution:
 - In the case of an additive noise model:
-![equation](http://www.sciweavers.org/tex2img.php?eq=p_%5Cmathit%7Bobs%7D%28t%29%20%5Csim%20%5Cmathcal%7BN%7D%20%5Cbig%28%20p%28t%29%2C%20%5Csigma%5E2%20%5Cbig%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="http://www.sciweavers.org/tex2img.php?eq=p_%5Cmathit%7Bobs%7D%28t%29%20%5Csim%20%5Cmathcal%7BN%7D%20%5Cbig%28%20p%28t%29%2C%20%5Csigma%5E2%20%5Cbig%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" width="175" height="22" />
 - In the case of an additive multiplicative noise model:
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Clog%20%5Cbig%28%20p_%5Cmathit%7Bobs%7D%28t%29%20%5Cbig%29%20%5Csim%20%5Cmathcal%7BN%7D%20%5CBig%28%20%5Clog%20%5Cbig%28%20p%28t%29%20%5Cbig%29%2C%20%5Csigma%5E2%20%5CBig%29%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="http://www.sciweavers.org/tex2img.php?eq=%5Clog%20%5Cbig%28%20p_%5Cmathit%7Bobs%7D%28t%29%20%5Cbig%29%20%5Csim%20%5Cmathcal%7BN%7D%20%5CBig%28%20%5Clog%20%5Cbig%28%20p%28t%29%20%5Cbig%29%2C%20%5Csigma%5E2%20%5CBig%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\log \big( p_\mathit{obs}(t) \big) \sim \mathcal{N} \Big( \log \big( p(t) \big), \sigma^2 \Big)" width="272" height="32" />
 
 ### Priors
 
