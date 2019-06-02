@@ -14,13 +14,52 @@ The data was collected in 3 differents experimental settings, each of them repea
 ## Model
 
 The evolution of the population of yeasts is modelled with the competitive Lokta-Volterra equations.
-For a single species $$p$$:
+For a single species p:
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bdp%7D%7Bdt%7D%20%3D%20p%20%28r%20-%20%5Calpha%20p%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=p%28t%29%20%3D%20%5Cfrac%7Bk%7D%7B1%20%2B%20C%20e%5E%7B-%20r%20t%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+- r is the growth parameter
+- alpha is the (self) competition rate
+- k = r / alpha is the carrying capacity (steady state)
+- C is a constant determined by initial conditions
+
+For two species:
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cbegin%7Bcases%7D%0A%5Cfrac%7Bdp_1%7D%7Bdt%7D%20%3D%20p_1%20%28r_1%20-%20%5Calpha_%7B1%2C%201%7D%20p_1%20-%20%5Calpha_%7B1%2C2%7D%20p_2%29%20%5C%5C%0A%5Cfrac%7Bdp_2%7D%7Bdt%7D%20%3D%20p_2%20%28r_2%20-%20%5Calpha_%7B2%2C%201%7D%20p_1%20-%20%5Calpha_%7B2%2C%202%7D%20p_2%29%0A%5Cend%7Bcases%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+More generally, for N species (`*` is the element-wise multiplication):
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bd%5Cboldsymbol%7Bp%7D%7D%7Bdt%7D%20%3D%20%5Cboldsymbol%7Bp%7D%20%2A%20%28%5Cboldsymbol%7Br%7D%20-%20A%20%5Cboldsymbol%7Bp%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+The solutions of the ODEs can expressed as function of the initial conditions f_0, the parameters alpha and r and time t:
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=p%28t%29%20%3D%20%20f%28p_0%2C%20r%2C%20%5Calpha%2C%20t%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+The measurement processed is modelled with a normal distribution:
+- In the case of an additive noise model:
+![equation](http://www.sciweavers.org/tex2img.php?eq=p_%5Cmathit%7Bobs%7D%28t%29%20%5Csim%20%5Cmathcal%7BN%7D%20%5Cbig%28%20p%28t%29%2C%20%5Csigma%5E2%20%5Cbig%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+- In the case of an additive multiplicative noise model:
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Clog%20%5Cbig%28%20p_%5Cmathit%7Bobs%7D%28t%29%20%5Cbig%29%20%5Csim%20%5Cmathcal%7BN%7D%20%5CBig%28%20%5Clog%20%5Cbig%28%20p%28t%29%20%5Cbig%29%2C%20%5Csigma%5E2%20%5CBig%29%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+The initial conditions of the different experiments are partially pooled with the hierarchical prior:
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=f_0%20%5Csim%20%5Cmathcal%7BN%7D%5E%2B%280%2C%20%5Csigma_%7Bf_0%7D%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+Competition rates are regularised with the hierarchical prior:
+
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Calpha_%7Bi%2C%20j%7D%20%5Csim%20%5Cmathcal%7BC%7D%5E%2B%280%2C%20%5Csigma_%5Calpha%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+Alternative choices could be considered, such as a Gaussian distribution (cf. ridge/L_2 regularisation), a Laplace distribution (cf. lasso/L_1 regularisation) or using a Horseshoe prior.
+
+Weakly informative priors were chosen for the remaining parameters.
 
 **Work in progress**
-
-Two models are proposed, one with multiplicative error, the other with additive error.
-The two models notably implement a Cauchy regularisation on the alpha matrix (matrix of competition rates). The regularisation could be changed to a Gaussian distribution (cf. ridge regularisation), Laplace (cf. lasso regularisation) or to the Horseshoe distribution.
 
 ## Results
 
 ![coefficient estimates](results.jpg)
+
+In addition, PPC + Model selection in likelihood
+
