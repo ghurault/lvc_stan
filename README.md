@@ -19,7 +19,7 @@ The evolution of the population of yeasts is modelled with the competitive Lokta
 
 For a single species p:
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bdp%7D%7Bdt%7D%20%3D%20p%20%28r%20-%20%5Calpha%20p%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="https://latex.codecogs.com/svg.latex?\frac{dp}{dt}&space;=&space;p&space;(r&space;-&space;\alpha&space;p)" title="\frac{dp}{dt} = p (r - \alpha p)" />
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=p%28t%29%20%3D%20%5Cfrac%7Bk%7D%7B1%20%2B%20C%20e%5E%7B-%20r%20t%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
