@@ -30,11 +30,11 @@ For a single species p:
 
 For two species:
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cbegin%7Bcases%7D%0A%5Cfrac%7Bdp_1%7D%7Bdt%7D%20%3D%20p_1%20%28r_1%20-%20%5Calpha_%7B1%2C%201%7D%20p_1%20-%20%5Calpha_%7B1%2C2%7D%20p_2%29%20%5C%5C%0A%5Cfrac%7Bdp_2%7D%7Bdt%7D%20%3D%20p_2%20%28r_2%20-%20%5Calpha_%7B2%2C%201%7D%20p_1%20-%20%5Calpha_%7B2%2C%202%7D%20p_2%29%0A%5Cend%7Bcases%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cbegin%7Bcases%7D%0A%5Cfrac%7Bdp_1%7D%7Bdt%7D%20%3D%20p_1%20%28r_1%20-%20%5Calpha_%7B1%2C%201%7D%20p_1%20-%20%5Calpha_%7B1%2C2%7D%20p_2%29%20%5C%5C%0A%5Cfrac%7Bdp_2%7D%7Bdt%7D%20%3D%20p_2%20%28r_2%20-%20%5Calpha_%7B2%2C%201%7D%20p_1%20-%20%5Calpha_%7B2%2C%202%7D%20p_2%29%0A%5Cend%7Bcases%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\begin{cases}\frac{dp_1}{dt} = p_1 (r_1 - \alpha_{1, 1} p_1 - \alpha_{1,2} p_2) \\\frac{dp_2}{dt} = p_2 (r_2 - \alpha_{2, 1} p_1 - \alpha_{2, 2} p_2)\end{cases}" width="260" height="53" />
 
 More generally, for N species (`*` is the element-wise multiplication):
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bd%5Cboldsymbol%7Bp%7D%7D%7Bdt%7D%20%3D%20%5Cboldsymbol%7Bp%7D%20%2A%20%28%5Cboldsymbol%7Br%7D%20-%20A%20%5Cboldsymbol%7Bp%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bd%5Cboldsymbol%7Bp%7D%7D%7Bdt%7D%20%3D%20%5Cboldsymbol%7Bp%7D%20%2A%20%28%5Cboldsymbol%7Br%7D%20-%20A%20%5Cboldsymbol%7Bp%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{d\boldsymbol{p}}{dt} = \boldsymbol{p} * (\boldsymbol{r} - A \boldsymbol{p})" width="150" height="43" />
 
 ### Statistical model
 
