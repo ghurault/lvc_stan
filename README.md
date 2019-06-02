@@ -42,7 +42,7 @@ The solutions of the ODEs can expressed as function of the initial conditions f_
 
 <img src="https://latex.codecogs.com/svg.latex?p(t)&space;=&space;f(f_0,&space;r,&space;\alpha,&space;t)" title="p(t) = f(f_0, r, \alpha, t)" />
 
-The measurement processed is modelled with a normal distribution:
+The measurement process is modelled with a normal distribution:
 - In the case of an additive noise model:
 <img src="https://latex.codecogs.com/svg.latex?p_\mathit{obs}(t)&space;\sim&space;\mathcal{N}&space;\big(&space;p(t),&space;\sigma^2&space;\big)" title="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" />
 
@@ -51,7 +51,8 @@ The measurement processed is modelled with a normal distribution:
 
 ### Priors
 
-- The initial conditions of the different experiments are partially pooled with the hierarchical prior:
+- The initial conditions of the different experiments are unknown and treated as parameters.
+They are partially pooled with the hierarchical prior:
 
 <img src="https://latex.codecogs.com/svg.latex?f_0&space;\sim&space;\mathcal{N}^&plus;(0,&space;\sigma_{f_0}^2)" title="f_0 \sim \mathcal{N}^+(0, \sigma_{f_0}^2)" />
 
@@ -66,9 +67,9 @@ Alternative choices could be considered, such as a Gaussian distribution (cf. ri
 ## Results
 
 Posterior predictive checks are conducted and the likelihood is stored to perform model selection with the loo package.
+The additive and multiplicative models explain the data well but there is no strong evidence for choosing one model instead of the other (additive model is slightly favoured), although the experimental setup would suggest an additive noise.
 
-Coefficients estimates for the additive and multiplicative models (and those estimated in Gause's paper) are given below (error bars represents the 95% credible interval).
-There is no strong evidence for choosing one model instead of the other (additive model is slightly favoured), although the experimental setup would suggest an additive noise.
+Coefficients estimates for the two models (and those estimated in Gause's paper) are given below (error bars represents the 95% credible interval).
 The original estimates are similar to those of the additive error model but slightly differ to the multiplicate error model.
 
 ![coefficient estimates](results.jpg)
