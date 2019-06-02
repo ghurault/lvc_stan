@@ -34,29 +34,29 @@ For two species:
 
 More generally, for N species (`*` is the element-wise multiplication):
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bd%5Cboldsymbol%7Bp%7D%7D%7Bdt%7D%20%3D%20%5Cboldsymbol%7Bp%7D%20%2A%20%28%5Cboldsymbol%7Br%7D%20-%20A%20%5Cboldsymbol%7Bp%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{d\boldsymbol{p}}{dt} = \boldsymbol{p} * (\boldsymbol{r} - A \boldsymbol{p})" width="150" height="43" />
+<img src="https://latex.codecogs.com/svg.latex?\frac{d\boldsymbol{p}}{dt}&space;=&space;\boldsymbol{p}&space;*&space;(\boldsymbol{r}&space;-&space;A&space;\boldsymbol{p})" title="\frac{d\boldsymbol{p}}{dt} = \boldsymbol{p} * (\boldsymbol{r} - A \boldsymbol{p})" />
 
 ### Statistical model
 
 The solutions of the ODEs can expressed as function of the initial conditions f_0, the parameters alpha and r and time t:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=p%28t%29%20%3D%20f%28p_0%2C%20r%2C%20%5Calpha%2C%20t%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="p(t) = f(f_0, r, \alpha, t)" width="150" height="19" />
+<img src="https://latex.codecogs.com/svg.latex?p(t)&space;=&space;f(f_0,&space;r,&space;\alpha,&space;t)" title="p(t) = f(f_0, r, \alpha, t)" />
 
 The measurement processed is modelled with a normal distribution:
 - In the case of an additive noise model:
-<img src="http://www.sciweavers.org/tex2img.php?eq=p_%5Cmathit%7Bobs%7D%28t%29%20%5Csim%20%5Cmathcal%7BN%7D%20%5Cbig%28%20p%28t%29%2C%20%5Csigma%5E2%20%5Cbig%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" width="175" height="22" />
+<img src="https://latex.codecogs.com/svg.latex?p_\mathit{obs}(t)&space;\sim&space;\mathcal{N}&space;\big(&space;p(t),&space;\sigma^2&space;\big)" title="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" />
 - In the case of an additive multiplicative noise model:
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Clog%20%5Cbig%28%20p_%5Cmathit%7Bobs%7D%28t%29%20%5Cbig%29%20%5Csim%20%5Cmathcal%7BN%7D%20%5CBig%28%20%5Clog%20%5Cbig%28%20p%28t%29%20%5Cbig%29%2C%20%5Csigma%5E2%20%5CBig%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\log \big( p_\mathit{obs}(t) \big) \sim \mathcal{N} \Big( \log \big( p(t) \big), \sigma^2 \Big)" width="272" height="32" />
+<img src="https://latex.codecogs.com/svg.latex?\log&space;\big(&space;p_\mathit{obs}(t)&space;\big)&space;\sim&space;\mathcal{N}&space;\Big(&space;\log&space;\big(&space;p(t)&space;\big),&space;\sigma^2&space;\Big)" title="\log \big( p_\mathit{obs}(t) \big) \sim \mathcal{N} \Big( \log \big( p(t) \big), \sigma^2 \Big)" />
 
 ### Priors
 
 The initial conditions of the different experiments are partially pooled with the hierarchical prior:
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=f_0%20%5Csim%20%5Cmathcal%7BN%7D%5E%2B%280%2C%20%5Csigma_%7Bf_0%7D%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="https://latex.codecogs.com/svg.latex?f_0&space;\sim&space;\mathcal{N}^&plus;(0,&space;\sigma_{f_0}^2)" title="f_0 \sim \mathcal{N}^+(0, \sigma_{f_0}^2)" />
 
 Competition rates are regularised with the hierarchical prior:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Calpha_%7Bi%2C%20j%7D%20%5Csim%20%5Cmathcal%7BC%7D%5E%2B%280%2C%20%5Csigma_%5Calpha%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\alpha_{i, j} \sim \mathcal{C}^+(0, \sigma_\alpha)" width="122" height="22" />
+<img src="https://latex.codecogs.com/svg.latex?\alpha_{i,&space;j}&space;\sim&space;\mathcal{C}^&plus;(0,&space;\sigma_\alpha)" title="\alpha_{i, j} \sim \mathcal{C}^+(0, \sigma_\alpha)" />
 
 Alternative choices could be considered, such as a Gaussian distribution (cf. ridge/L<sub>2</sub> regularisation), a Laplace distribution (cf. lasso/L<sub>1</sub> regularisation) or using a Horseshoe prior.
 
