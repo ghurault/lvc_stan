@@ -14,7 +14,7 @@ The data was collected in 3 differents experimental settings, each of them repea
 ## Model
 
 The evolution of the population of yeasts is modelled with the competitive Lokta-Volterra equations.
-For a single species $p$:
+For a single species $$p$$:
 
 **Work in progress**
 
@@ -22,7 +22,5 @@ Two models are proposed, one with multiplicative error, the other with additive 
 The two models notably implement a Cauchy regularisation on the alpha matrix (matrix of competition rates). The regularisation could be changed to a Gaussian distribution (cf. ridge regularisation), Laplace (cf. lasso regularisation) or to the Horseshoe distribution.
 
 ## Results
-
-Coefficients estimates for the different models (and those estimated in the paper) are given below:
 
 ![coefficient estimates](results.jpg)
