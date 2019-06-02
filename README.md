@@ -67,7 +67,8 @@ Alternative choices could be considered, such as a Gaussian distribution (cf. ri
 
 Posterior predictive checks are conducted and the likelihood is stored to perform model selection with the loo package.
 
-Coefficients estimates for the additive and multiplicative models (and those estimated in Gause's paper) are given below.
-There is no strong evidence for choosing one model instead of another (additive model is slightly favoured), although the experimental setup would suggest an additive noise.
+Coefficients estimates for the additive and multiplicative models (and those estimated in Gause's paper) are given below (error bars represents the 95% credible interval).
+There is no strong evidence for choosing one model instead of the other (additive model is slightly favoured), although the experimental setup would suggest an additive noise.
+The original estimates are similar to those of the additive error model but slightly differ to the multiplicate error model.
 
 ![coefficient estimates](results.jpg)
