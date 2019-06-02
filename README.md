@@ -21,7 +21,7 @@ For a single species p:
 
 <img src="https://latex.codecogs.com/svg.latex?\frac{dp}{dt}&space;=&space;p&space;(r&space;-&space;\alpha&space;p)" title="\frac{dp}{dt} = p (r - \alpha p)" />
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=p%28t%29%20%3D%20%5Cfrac%7Bk%7D%7B1%20%2B%20C%20e%5E%7B-%20r%20t%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="https://latex.codecogs.com/svg.latex?p(t)&space;=&space;\frac{k}{1&space;&plus;&space;C&space;e^{-&space;r&space;t}}" title="p(t) = \frac{k}{1 + C e^{- r t}}" />
 
 - r is the growth parameter
 - alpha is the (self) competition rate
@@ -30,7 +30,7 @@ For a single species p:
 
 For two species:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cbegin%7Bcases%7D%0A%5Cfrac%7Bdp_1%7D%7Bdt%7D%20%3D%20p_1%20%28r_1%20-%20%5Calpha_%7B1%2C%201%7D%20p_1%20-%20%5Calpha_%7B1%2C2%7D%20p_2%29%20%5C%5C%0A%5Cfrac%7Bdp_2%7D%7Bdt%7D%20%3D%20p_2%20%28r_2%20-%20%5Calpha_%7B2%2C%201%7D%20p_1%20-%20%5Calpha_%7B2%2C%202%7D%20p_2%29%0A%5Cend%7Bcases%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\begin{cases}\frac{dp_1}{dt} = p_1 (r_1 - \alpha_{1, 1} p_1 - \alpha_{1,2} p_2) \\\frac{dp_2}{dt} = p_2 (r_2 - \alpha_{2, 1} p_1 - \alpha_{2, 2} p_2)\end{cases}" width="260" height="53" />
+<img src="https://latex.codecogs.com/svg.latex?\begin{cases}\frac{dp_1}{dt}&space;=&space;p_1&space;(r_1&space;-&space;\alpha_{1,&space;1}&space;p_1&space;-&space;\alpha_{1,2}&space;p_2)&space;\\\frac{dp_2}{dt}&space;=&space;p_2&space;(r_2&space;-&space;\alpha_{2,&space;1}&space;p_1&space;-&space;\alpha_{2,&space;2}&space;p_2)\end{cases}" title="\begin{cases}\frac{dp_1}{dt} = p_1 (r_1 - \alpha_{1, 1} p_1 - \alpha_{1,2} p_2) \\\frac{dp_2}{dt} = p_2 (r_2 - \alpha_{2, 1} p_1 - \alpha_{2, 2} p_2)\end{cases}" />
 
 More generally, for N species (`*` is the element-wise multiplication):
 
