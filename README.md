@@ -61,10 +61,13 @@ The measurement processed is modelled with a normal distribution:
 
 Alternative choices could be considered, such as a Gaussian distribution (cf. ridge/L<sub>2</sub> regularisation), a Laplace distribution (cf. lasso/L<sub>1</sub> regularisation) or using a Horseshoe prior.
 
-- Weakly informative priors were chosen for the remaining parameters.
+- Weakly informative priors are chosen for the remaining parameters.
 
 ## Results
 
 Posterior predictive checks are conducted and the likelihood is stored to perform model selection with the loo package.
+
+Coefficients estimates for the additive and multiplicative models (and those estimated in Gause's paper) are given below.
+There is no strong evidence for choosing one model instead of another (additive model is slightly favoured), although the experimental setup would suggest an additive noise.
 
 ![coefficient estimates](results.jpg)
