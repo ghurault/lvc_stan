@@ -45,22 +45,23 @@ The solutions of the ODEs can expressed as function of the initial conditions f_
 The measurement processed is modelled with a normal distribution:
 - In the case of an additive noise model:
 <img src="https://latex.codecogs.com/svg.latex?p_\mathit{obs}(t)&space;\sim&space;\mathcal{N}&space;\big(&space;p(t),&space;\sigma^2&space;\big)" title="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" />
+
 - In the case of an additive multiplicative noise model:
 <img src="https://latex.codecogs.com/svg.latex?\log&space;\big(&space;p_\mathit{obs}(t)&space;\big)&space;\sim&space;\mathcal{N}&space;\Big(&space;\log&space;\big(&space;p(t)&space;\big),&space;\sigma^2&space;\Big)" title="\log \big( p_\mathit{obs}(t) \big) \sim \mathcal{N} \Big( \log \big( p(t) \big), \sigma^2 \Big)" />
 
 ### Priors
 
-The initial conditions of the different experiments are partially pooled with the hierarchical prior:
+- The initial conditions of the different experiments are partially pooled with the hierarchical prior:
 
 <img src="https://latex.codecogs.com/svg.latex?f_0&space;\sim&space;\mathcal{N}^&plus;(0,&space;\sigma_{f_0}^2)" title="f_0 \sim \mathcal{N}^+(0, \sigma_{f_0}^2)" />
 
-Competition rates are regularised with the hierarchical prior:
+- Competition rates are regularised with the hierarchical prior:
 
 <img src="https://latex.codecogs.com/svg.latex?\alpha_{i,&space;j}&space;\sim&space;\mathcal{C}^&plus;(0,&space;\sigma_\alpha)" title="\alpha_{i, j} \sim \mathcal{C}^+(0, \sigma_\alpha)" />
 
 Alternative choices could be considered, such as a Gaussian distribution (cf. ridge/L<sub>2</sub> regularisation), a Laplace distribution (cf. lasso/L<sub>1</sub> regularisation) or using a Horseshoe prior.
 
-Weakly informative priors were chosen for the remaining parameters.
+- Weakly informative priors were chosen for the remaining parameters.
 
 ## Results
 
