@@ -56,7 +56,7 @@ The initial conditions of the different experiments are partially pooled with th
 
 Competition rates are regularised with the hierarchical prior:
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Calpha_%7Bi%2C%20j%7D%20%5Csim%20%5Cmathcal%7BC%7D%5E%2B%280%2C%20%5Csigma_%5Calpha%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="http://www.sciweavers.org/tex2img.php?eq=%5Calpha_%7Bi%2C%20j%7D%20%5Csim%20%5Cmathcal%7BC%7D%5E%2B%280%2C%20%5Csigma_%5Calpha%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\alpha_{i, j} \sim \mathcal{C}^+(0, \sigma_\alpha)" width="122" height="22" />
 
 Alternative choices could be considered, such as a Gaussian distribution (cf. ridge/L<sub>2</sub> regularisation), a Laplace distribution (cf. lasso/L<sub>1</sub> regularisation) or using a Horseshoe prior.
 
