@@ -45,24 +45,19 @@ The solutions of the ODEs can expressed as function of the initial conditions f<
 Parameters are shared across experiments (fixed effects), except for the initial conditions which might vary from experiment to experiment.
 
 The measurement process is modelled with a normal distribution:
-- In the case of an additive noise model:
-<img src="https://latex.codecogs.com/svg.latex?p_\mathit{obs}(t)&space;\sim&space;\mathcal{N}&space;\big(&space;p(t),&space;\sigma^2&space;\big)" title="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" />
+- In the case of an additive noise model: <img src="https://latex.codecogs.com/svg.latex?p_\mathit{obs}(t)&space;\sim&space;\mathcal{N}&space;\big(&space;p(t),&space;\sigma^2&space;\big)" title="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" />
 
-- In the case of an additive multiplicative noise model:
-<img src="https://latex.codecogs.com/svg.latex?\log&space;\big(&space;p_\mathit{obs}(t)&space;\big)&space;\sim&space;\mathcal{N}&space;\Big(&space;\log&space;\big(&space;p(t)&space;\big),&space;\sigma^2&space;\Big)" title="\log \big( p_\mathit{obs}(t) \big) \sim \mathcal{N} \Big( \log \big( p(t) \big), \sigma^2 \Big)" />
+- In the case of an additive multiplicative noise model: <img src="https://latex.codecogs.com/svg.latex?\log&space;\big(&space;p_\mathit{obs}(t)&space;\big)&space;\sim&space;\mathcal{N}&space;\Big(&space;\log&space;\big(&space;p(t)&space;\big),&space;\sigma^2&space;\Big)" title="\log \big( p_\mathit{obs}(t) \big) \sim \mathcal{N} \Big( \log \big( p(t) \big), \sigma^2 \Big)" />
 
 ### Priors
 
-- The initial conditions of the different experiments are unknown and treated as parameters.
-They are partially pooled with the hierarchical prior:
+- The initial conditions of the different experiments are unknown and treated as parameters, with the hierarchical prior:
 
 <img src="https://latex.codecogs.com/svg.latex?f_0&space;\sim&space;\mathcal{N}^&plus;(0,&space;\sigma_{f_0}^2)" title="f_0 \sim \mathcal{N}^+(0, \sigma_{f_0}^2)" />
 
 - Competition rates are regularised with the hierarchical prior:
 
 <img src="https://latex.codecogs.com/svg.latex?\alpha_{i,&space;j}&space;\sim&space;\mathcal{C}^&plus;(0,&space;\sigma_\alpha)" title="\alpha_{i, j} \sim \mathcal{C}^+(0, \sigma_\alpha)" />
-
-Alternative choices could be considered, such as a Gaussian distribution (cf. ridge/L<sub>2</sub> regularisation), a Laplace distribution (cf. lasso/L<sub>1</sub> regularisation) or using a Horseshoe prior.
 
 - Weakly informative priors are chosen for the remaining parameters.
 
@@ -78,7 +73,12 @@ The original estimates are similar to those of the additive error model but slig
 
 ## Future directions
 
-- Regularisation alpha
-- Sample k
-- Random effects experiment level
-- Alpha positive definite if systems stable
+- Alternative regularisation of alpha matrix:
+  - Gaussian distribution (cf. ridge/L<sub>2</sub> regularisation)
+  - Laplace distribution (cf. lasso/L<sub>1</sub> regularisation)
+  - Horseshoe distribution
+- Sample k (steady states) instead of r (growth)
+- Introduce random effects at the experiment level
+- Compute Bayesian R-squared
+- Hard code alpha matrix as positive definite is the systems is stable a priori
+- Regularise r
