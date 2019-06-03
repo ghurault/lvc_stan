@@ -38,9 +38,11 @@ More generally, for N species (`*` is the element-wise multiplication):
 
 ### Statistical model
 
-The solutions of the ODEs can expressed as function of the initial conditions f_0, the parameters alpha and r and time t:
+The solutions of the ODEs can expressed as function of the initial conditions f<sub>0</sub>, the parameters alpha and r and time t:
 
 <img src="https://latex.codecogs.com/svg.latex?p(t)&space;=&space;f(f_0,&space;r,&space;\alpha,&space;t)" title="p(t) = f(f_0, r, \alpha, t)" />
+
+Parameters are shared across experiments (fixed effects), except for the initial conditions which might vary from experiment to experiment.
 
 The measurement process is modelled with a normal distribution:
 - In the case of an additive noise model:
@@ -73,3 +75,10 @@ Coefficients estimates for the two models (and those estimated in Gause's paper)
 The original estimates are similar to those of the additive error model but slightly differ to the multiplicate error model.
 
 ![coefficient estimates](results.jpg)
+
+## Future directions
+
+- Regularisation alpha
+- Sample k
+- Random effects experiment level
+- Alpha positive definite if systems stable
