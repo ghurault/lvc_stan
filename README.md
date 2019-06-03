@@ -19,7 +19,7 @@ The evolution of the population of yeasts is modelled with the competitive Lokta
 
 For a single species p:
 
-<img src="https://latex.codecogs.com/svg.latex?\frac{dp}{dt}&space;=&space;p&space;(r&space;-&space;\alpha&space;p)" title="\frac{dp}{dt} = p (r - \alpha p)" />
+<img src="https://latex.codecogs.com/svg.latex?\frac{dp}{dt}&space;=&space;p&space;(r&space;-&space;\alpha&space;p)" title="\frac{dp}{dt} = p (r - \alpha p)"/>
 
 <img src="https://latex.codecogs.com/svg.latex?p(t)&space;=&space;\frac{k}{1&space;&plus;&space;C&space;e^{-&space;r&space;t}}" title="p(t) = \frac{k}{1 + C e^{- r t}}" />
 
@@ -45,9 +45,11 @@ The solutions of the ODEs can expressed as function of the initial conditions f<
 Parameters are shared across experiments (fixed effects), except for the initial conditions which might vary from experiment to experiment.
 
 The measurement process is modelled with a normal distribution:
-- In the case of an additive noise model: <img src="https://latex.codecogs.com/svg.latex?p_\mathit{obs}(t)&space;\sim&space;\mathcal{N}&space;\big(&space;p(t),&space;\sigma^2&space;\big)" title="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" />
+- In the case of an additive noise model:
+<img src="https://latex.codecogs.com/svg.latex?p_\mathit{obs}(t)&space;\sim&space;\mathcal{N}&space;\big(&space;p(t),&space;\sigma^2&space;\big)" title="p_\mathit{obs}(t) \sim \mathcal{N} \big( p(t), \sigma^2 \big)" />
 
-- In the case of an additive multiplicative noise model: <img src="https://latex.codecogs.com/svg.latex?\log&space;\big(&space;p_\mathit{obs}(t)&space;\big)&space;\sim&space;\mathcal{N}&space;\Big(&space;\log&space;\big(&space;p(t)&space;\big),&space;\sigma^2&space;\Big)" title="\log \big( p_\mathit{obs}(t) \big) \sim \mathcal{N} \Big( \log \big( p(t) \big), \sigma^2 \Big)" />
+- In the case of an additive multiplicative noise model:
+<img src="https://latex.codecogs.com/svg.latex?\log&space;\big(&space;p_\mathit{obs}(t)&space;\big)&space;\sim&space;\mathcal{N}&space;\Big(&space;\log&space;\big(&space;p(t)&space;\big),&space;\sigma^2&space;\Big)" title="\log \big( p_\mathit{obs}(t) \big) \sim \mathcal{N} \Big( \log \big( p(t) \big), \sigma^2 \Big)" />
 
 ### Priors
 
